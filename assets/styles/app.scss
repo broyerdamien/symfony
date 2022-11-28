@@ -1,0 +1,21 @@
+body {
+    background-color: red;
+    ;
+}
+
+$navbar-light-color: red;
+$light: blue;
+
+$couleur-principale: red;
+$couleur-secondaire: blue;
+
+nav {
+    color: $couleur-principale;
+    background-color: $couleur-secondaire
+}
+
+#couleur {
+    background-color: chartreuse;
+}
+
+@import "~bootstrap/scss/bootstrap";
