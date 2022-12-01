@@ -1,15 +1,26 @@
 {% extends 'base.html.twig' %}
-{% block title %}Wild Series
+
+{% block title %}Série #{{ program.id }}
 {% endblock %}
 
 {% block body %}
+	<div class="media">
+		<div class="card" style="width: 18rem;">
+			<img src="{{ program.poster }}" class="card-img-top" alt="">
+			<div class="card-body">
+				<h5 class="card-title">
+					{{ program.title }}</h5>
+				<p class="card-text">
+					category:
+					{{ program.category.name }}<br>
 
-	<section>
+					Synopsis:
+					{{ program.synopsis }}</p>
+				<a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+		</div>
 
-		<h1>program
-			{{id}}
-		</h1>
-
-
-	</section>
-{% endblock %}
+		<a href="{{ path('program_index') }}">
+			Retour à la liste des programmes
+		</a>
+	{% endblock %}

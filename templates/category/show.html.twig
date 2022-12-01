@@ -6,6 +6,11 @@
 {% block body %}
 	<h1>Toutes les séries de la table program :
 	</h1>
+
+	<h2>
+		{{category.id}}
+		Catégorie:
+		{{category.name}}</h2>
 	{% for program in programs %}
 
 		<section>
